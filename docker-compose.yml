@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  postgres:
+    container_name: "postgres_create_repro"
+    image: postgres:latest
+    ports: 
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: create_repro
+      POSTGRES_PASSWORD: create_repro
+      POSTGRES_DB: create_repro
+    volumes:
+      - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql

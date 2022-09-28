@@ -7,11 +7,11 @@
 ## Usage
 
 - docker compose up -d
+- Set .env or DATABASE_URL environment variable accordingly
 - yarn or npm install
 - ts-node index.ts
 
 ## Notes
 
 - docker compose should create pg database locally on default pg port (5432) with credential in docker-compose.yml
-- Set .env or DATABASE_URL environment variable accordingly
 - You can set your desired version of Prisma either 4.3.1 or 4.4.0 (default) for repro
